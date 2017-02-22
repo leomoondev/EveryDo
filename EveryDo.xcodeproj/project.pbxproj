@@ -18,6 +18,7 @@
 		DA53ED931E5CFFA100E42E74 /* CreateTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DA53ED921E5CFFA100E42E74 /* CreateTask.m */; };
 		DA53ED991E5D259D00E42E74 /* CreateNewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA53ED981E5D259D00E42E74 /* CreateNewCell.m */; };
 		DA53ED9C1E5D483200E42E74 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA53ED9B1E5D483200E42E74 /* DetailViewController.m */; };
+		DA53ED9F1E5D741600E42E74 /* AddNewTaskViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA53ED9E1E5D741600E42E74 /* AddNewTaskViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,8 @@
 		DA53ED981E5D259D00E42E74 /* CreateNewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateNewCell.m; sourceTree = "<group>"; };
 		DA53ED9A1E5D483100E42E74 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
 		DA53ED9B1E5D483200E42E74 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		DA53ED9D1E5D741600E42E74 /* AddNewTaskViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddNewTaskViewController.h; sourceTree = "<group>"; };
+		DA53ED9E1E5D741600E42E74 /* AddNewTaskViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddNewTaskViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 				DA53ED981E5D259D00E42E74 /* CreateNewCell.m */,
 				DA53ED9A1E5D483100E42E74 /* DetailViewController.h */,
 				DA53ED9B1E5D483200E42E74 /* DetailViewController.m */,
+				DA53ED9D1E5D741600E42E74 /* AddNewTaskViewController.h */,
+				DA53ED9E1E5D741600E42E74 /* AddNewTaskViewController.m */,
 			);
 			path = EveryDo;
 			sourceTree = "<group>";
@@ -181,6 +186,7 @@
 				DA53ED991E5D259D00E42E74 /* CreateNewCell.m in Sources */,
 				DA53ED821E5CCBAA00E42E74 /* EveryDo.xcdatamodeld in Sources */,
 				DA53ED901E5CFCE700E42E74 /* DisplayPreviewViewController.m in Sources */,
+				DA53ED9F1E5D741600E42E74 /* AddNewTaskViewController.m in Sources */,
 				DA53ED761E5CCBAA00E42E74 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

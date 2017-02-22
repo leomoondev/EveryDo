@@ -12,6 +12,7 @@
 
 
 @property (strong, nonatomic) CreateTask *taskDetail;
+
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet UILabel *toDoDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priorityNumberLabel;

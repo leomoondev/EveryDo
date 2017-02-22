@@ -11,7 +11,7 @@
 @interface CreateNewCell : UITableViewCell
 
 @property (weak, nonatomic) IBOutlet UILabel *taskTitle;
-//@property (weak, nonatomic) IBOutlet UILabel *taskDescription;
-//@property (weak, nonatomic) IBOutlet UILabel *taskPriority;
+@property (weak, nonatomic) IBOutlet UILabel *taskDescription;
+@property (weak, nonatomic) IBOutlet UILabel *taskPriority;
 
 @end

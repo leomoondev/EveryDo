@@ -10,7 +10,7 @@
 #import "CreateTask.h"
 #import "CreateNewCell.h"
 #import "DetailViewController.h"
-
+#import "AddNewTaskViewController.h"
 #import <UIKit/UIKit.h>
 
 @interface DisplayPreviewViewController : UITableViewController
