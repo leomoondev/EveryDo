@@ -56,8 +56,8 @@
     return ToDoTableViewCell;
 }
 
-- (void) configureToDo: (CreateTask *) createTask  {
-    
-    
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return UITableViewAutomaticDimension;
 }
 @end
