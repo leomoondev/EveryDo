@@ -29,9 +29,11 @@
 - (void)showDetailView {
     
     if(self.taskDetail) {
-        self.titleLabel.text = [self.taskDetail todoDescription];
+        
+        self.titleLabel.text = [self.taskDetail title];
         self.toDoDescriptionLabel.text = [self.taskDetail todoDescription];
-        self.priorityNumberLabel.text = [self.taskDetail todoDescription];
+        self.priorityNumberLabel.text = [NSString stringWithFormat:@"%i", self.taskDetail.priorityNumber];
+
     }
 }
 

@@ -9,12 +9,11 @@
 #import "ViewController.h"
 #import "CreateTask.h"
 #import "CreateNewCell.h"
+#import "DetailViewController.h"
 
 #import <UIKit/UIKit.h>
 
 @interface DisplayPreviewViewController : UITableViewController
-
-- (void) configureToDo: (CreateTask *) createTask;
 
 
 

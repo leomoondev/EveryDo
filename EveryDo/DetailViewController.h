@@ -16,6 +16,9 @@
 @property (weak, nonatomic) IBOutlet UILabel *toDoDescriptionLabel;
 @property (weak, nonatomic) IBOutlet UILabel *priorityNumberLabel;
 
+- (void) setDetailItem:(CreateTask *)addNewTask;
 
 
 @end
+
+

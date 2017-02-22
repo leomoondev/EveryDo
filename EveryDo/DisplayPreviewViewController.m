@@ -60,4 +60,19 @@
 {
     return UITableViewAutomaticDimension;
 }
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    if ([[segue identifier] isEqualToString:@"goToDetailView"]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+        CreateTask *todoToBeDetailed = self.storeTodoLists[indexPath.row];
+        DetailViewController *controller = (DetailViewController *)[segue destinationViewController];
+        [controller setDetailItem:todoToBeDetailed];
+    }
+    
+//    if ([[segue identifier] isEqualToString:@"newToDo"]) {
+//        AddNewViewController *newVC = segue.destinationViewController;
+//        
+//        newVC.delegate = self;
+//    }
+}
 @end
