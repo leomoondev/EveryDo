@@ -1,5 +1,5 @@
 //
-//  DisplayPreviewViewController.h
+//  MasterViewController.h
 //  EveryDo
 //
 //  Created by Hyung Jip Moon on 2017-02-21.
@@ -13,7 +13,7 @@
 #import "AddNewTaskViewController.h"
 #import <UIKit/UIKit.h>
 
-@interface DisplayPreviewViewController : UITableViewController
+@interface MasterViewController : UITableViewController
 
 
 

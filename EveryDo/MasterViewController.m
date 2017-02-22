@@ -1,19 +1,19 @@
 //
-//  DisplayPreviewViewController.m
+//  MasterViewController.m
 //  EveryDo
 //
 //  Created by Hyung Jip Moon on 2017-02-21.
 //  Copyright © 2017 leomoon. All rights reserved.
 //
 
-#import "DisplayPreviewViewController.h"
+#import "MasterViewController.h"
 
-@interface DisplayPreviewViewController ()<UITableViewDelegate, UITableViewDataSource, AddNewTaskViewController>
+@interface MasterViewController ()<UITableViewDelegate, UITableViewDataSource, AddNewTaskViewController>
 @property (strong, nonatomic) NSMutableArray *storeTodoLists;
 
 @end
 
-@implementation DisplayPreviewViewController
+@implementation MasterViewController
 
 - (void)viewDidLoad {
     

@@ -10,7 +10,6 @@
 #import "CreateTask.h"
 @interface DetailViewController : UIViewController
 
-
 @property (strong, nonatomic) CreateTask *taskDetail;
 
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
