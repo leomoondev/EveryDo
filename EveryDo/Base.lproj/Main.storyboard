@@ -53,7 +53,7 @@
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="taskTitle" destination="WJE-xH-Car" id="4PK-HQ-YII"/>
-                                    <segue destination="ysE-wv-9QI" kind="presentation" identifier="goToDetailView" id="0WA-yq-LZH"/>
+                                    <segue destination="ysE-wv-9QI" kind="show" identifier="goToDetailView" id="0WA-yq-LZH"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
