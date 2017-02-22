@@ -18,7 +18,6 @@
 - (void)viewDidLoad {
     
     [super viewDidLoad];
-    //allocate an d initialize todos array
 
     self.storeTodoLists = [[NSMutableArray alloc] init];
     CreateTask *createTaskOne = [[CreateTask alloc] initWithTitle:@"Cleaning" initWithDescription:@"ABCD my room" initWithPriorityNumber:1 initWithIndicator:NO];
@@ -41,12 +40,11 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    //return number of rows that is equal to number of task we have in todos mutable array
+
     return self.storeTodoLists.count;
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    //set identifier name
     NSString *cellIdentifier = @"newCell";
 
     CreateNewCell *ToDoTableViewCell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier forIndexPath:indexPath];
@@ -78,12 +76,12 @@
 
 }
 
-- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
     return UITableViewAutomaticDimension;
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    
     if ([[segue identifier] isEqualToString:@"goToDetailView"]) {
         NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
         CreateTask *todoToBeDetailed = self.storeTodoLists[indexPath.row];
@@ -96,10 +94,10 @@
         addNewTaskViewController.delegate = self;
     }
 }
+
 - (void)addNew:(CreateTask *)createTask {
     
     [self.storeTodoLists insertObject:createTask atIndex:0];
-    
     
     NSIndexPath *newIndexPath = [NSIndexPath indexPathForRow:0 inSection:0];
     [self.tableView insertRowsAtIndexPaths:@[newIndexPath] withRowAnimation:UITableViewRowAnimationAutomatic];
@@ -107,20 +105,27 @@
 
 - (void)swipeToCheckDone:(UISwipeGestureRecognizer *)sender {
     
-
     NSIndexPath *indexPath = [self.tableView indexPathForRowAtPoint:[sender locationInView:self.tableView]];
-    CreateTask *createTask = self.storeTodoLists[indexPath.row];
-
-    if (createTask.isCompletedIndicator == YES) {
-        createTask.isCompletedIndicator = NO;
+    
+    // If the list is empty, prevent indexPath to reach 0 so that the app doesn't crash.
+    if(indexPath == nil) {
+        [self.tableView reloadData];
     }
+    
+    //  Check to see if task is completed to see if it needs to check off or not.
     else {
-        createTask.isCompletedIndicator = YES;
+        CreateTask *createTask = self.storeTodoLists[indexPath.row];
+        
+        if (createTask.isCompletedIndicator == YES) {
+            createTask.isCompletedIndicator = NO;
+        }
+        else {
+            createTask.isCompletedIndicator = YES;
+        }
+        
+        // Update the tableview
+        [self.tableView reloadData];
     }
-    
-    // Update the tableview
-    [self.tableView reloadData];
-    
 }
 
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
