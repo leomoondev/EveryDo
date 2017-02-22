@@ -14,6 +14,10 @@
 		DA53ED821E5CCBAA00E42E74 /* EveryDo.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DA53ED801E5CCBAA00E42E74 /* EveryDo.xcdatamodeld */; };
 		DA53ED841E5CCBAA00E42E74 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA53ED831E5CCBAA00E42E74 /* Assets.xcassets */; };
 		DA53ED871E5CCBAA00E42E74 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA53ED851E5CCBAA00E42E74 /* LaunchScreen.storyboard */; };
+		DA53ED901E5CFCE700E42E74 /* DisplayPreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA53ED8F1E5CFCE700E42E74 /* DisplayPreviewViewController.m */; };
+		DA53ED931E5CFFA100E42E74 /* CreateTask.m in Sources */ = {isa = PBXBuildFile; fileRef = DA53ED921E5CFFA100E42E74 /* CreateTask.m */; };
+		DA53ED991E5D259D00E42E74 /* CreateNewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DA53ED981E5D259D00E42E74 /* CreateNewCell.m */; };
+		DA53ED9C1E5D483200E42E74 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DA53ED9B1E5D483200E42E74 /* DetailViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +32,14 @@
 		DA53ED831E5CCBAA00E42E74 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA53ED861E5CCBAA00E42E74 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA53ED881E5CCBAA00E42E74 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA53ED8E1E5CFCE700E42E74 /* DisplayPreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayPreviewViewController.h; sourceTree = "<group>"; };
+		DA53ED8F1E5CFCE700E42E74 /* DisplayPreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayPreviewViewController.m; sourceTree = "<group>"; };
+		DA53ED911E5CFFA100E42E74 /* CreateTask.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateTask.h; sourceTree = "<group>"; };
+		DA53ED921E5CFFA100E42E74 /* CreateTask.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateTask.m; sourceTree = "<group>"; };
+		DA53ED971E5D259D00E42E74 /* CreateNewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CreateNewCell.h; sourceTree = "<group>"; };
+		DA53ED981E5D259D00E42E74 /* CreateNewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CreateNewCell.m; sourceTree = "<group>"; };
+		DA53ED9A1E5D483100E42E74 /* DetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		DA53ED9B1E5D483200E42E74 /* DetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +82,14 @@
 				DA53ED881E5CCBAA00E42E74 /* Info.plist */,
 				DA53ED801E5CCBAA00E42E74 /* EveryDo.xcdatamodeld */,
 				DA53ED741E5CCBAA00E42E74 /* Supporting Files */,
+				DA53ED8E1E5CFCE700E42E74 /* DisplayPreviewViewController.h */,
+				DA53ED8F1E5CFCE700E42E74 /* DisplayPreviewViewController.m */,
+				DA53ED911E5CFFA100E42E74 /* CreateTask.h */,
+				DA53ED921E5CFFA100E42E74 /* CreateTask.m */,
+				DA53ED971E5D259D00E42E74 /* CreateNewCell.h */,
+				DA53ED981E5D259D00E42E74 /* CreateNewCell.m */,
+				DA53ED9A1E5D483100E42E74 /* DetailViewController.h */,
+				DA53ED9B1E5D483200E42E74 /* DetailViewController.m */,
 			);
 			path = EveryDo;
 			sourceTree = "<group>";
@@ -156,7 +176,11 @@
 			files = (
 				DA53ED7C1E5CCBAA00E42E74 /* ViewController.m in Sources */,
 				DA53ED791E5CCBAA00E42E74 /* AppDelegate.m in Sources */,
+				DA53ED931E5CFFA100E42E74 /* CreateTask.m in Sources */,
+				DA53ED9C1E5D483200E42E74 /* DetailViewController.m in Sources */,
+				DA53ED991E5D259D00E42E74 /* CreateNewCell.m in Sources */,
 				DA53ED821E5CCBAA00E42E74 /* EveryDo.xcdatamodeld in Sources */,
+				DA53ED901E5CFCE700E42E74 /* DisplayPreviewViewController.m in Sources */,
 				DA53ED761E5CCBAA00E42E74 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +340,7 @@
 				DA53ED8D1E5CCBAA00E42E74 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
